@@ -12,7 +12,8 @@ export default class App extends Component {
       <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route caseSensitive path='/WorldNews' element={<News key='helth' pageSize={5} country="us" category="science"/>}></Route>
+        <Route caseSensitive path='/health' element={<News key='home' pageSize={5} country="us" category="health"/>}></Route>
+        <Route caseSensitive path='/' element={<News key='helth' pageSize={5} country="us" category="science"/>}></Route>
         <Route caseSensitive path='/technology' element={<News key='technology' pageSize={5} country="us" category="technology"/>}></Route>
         <Route caseSensitive path='/sport' element={<News key='sport' pageSize={5} country="us" category="sport"/>}></Route>
         <Route caseSensitive path='/business' element={<News key='business' pageSize={5} country="us" category="business"/>}></Route>
